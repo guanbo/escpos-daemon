@@ -1,0 +1,29 @@
+{
+  "name": "escpos-daemon",
+  "version": "1.0.0",
+  "description": "escpos printer daemon of nodejs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "escpos",
+    "printer",
+    "nodejs"
+  ],
+  "author": "guanbo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "node-escpos": "git+https://github.com/guanbo/node-escpos.git#gb18030"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "superagent": "^1.7.2",
+    "superagent-prefix": "0.0.2"
+  }
+}
