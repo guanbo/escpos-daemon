@@ -1,0 +1,36 @@
+html
+  head
+    title ESCPOS打印机配置
+    style
+      include style.css
+          
+  body()
+    h2 打印机配置管理
+    hr
+    ol
+      each printer, index in printers
+        li='打印机IP地址：'
+          form(action='/printers', method='post')
+            input(type='text', name='host', value=printer.host)
+            button.danger.ml(type='submit', name='method', value='delete') 删除打印机
+          hr
+          blod 商品编号  
+          ol
+            each sku in printer.skus
+              li  
+                form(action='/skus', method='post')
+                  input(type='text', name='sku' value=sku)  
+                  input(type='hidden', name='method', value='delete')
+                  button.danger.ml(type='submit', name='host', value=printer.host) 删除商品
+            li(style={'margin-bottom': '20px'})
+              form(action='/skus', method='post')
+                input(type='text', name="sku", required, value="23243243242")
+                button.primary.ml(type="submit", name="host", value=printer.host) 新增商品 
+      li='新打印机IP地址：' 
+        form(action='/printers', method='post')
+          input(type="text", name="host", required)  
+          button.primary.ml(type="submit") 新增打印机
+    hr(style={'margin-top': '20px'})
+    form(action='/setting', method='post')
+      button.btn-lg.primary(type="submit", name='method', value='save') 保存
+      button.btn-lg.warning(type="submit", name='method', value='reset') 重置

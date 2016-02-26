@@ -1,0 +1,26 @@
+.btn-lg {
+  font-size: 23px;
+  color: #fff;
+  width:100px;
+  margin-right: 10px;
+}
+
+.primary {
+  background-color: #43a5e1
+}
+
+.warning {
+  background-color: orange;
+}
+
+.danger {
+  background-color: red;
+}
+
+.mr {
+  margin-right: 6px;
+}
+
+.ml {
+  margin-left: 6px;
+}
