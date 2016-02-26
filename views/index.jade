@@ -24,7 +24,7 @@ html
                   button.danger.ml(type='submit', name='host', value=printer.host) 删除商品
             li(style={'margin-bottom': '20px'})
               form(action='/skus', method='post')
-                input(type='text', name="sku", required, value="23243243242")
+                input(type='text', name="sku", required)
                 button.primary.ml(type="submit", name="host", value=printer.host) 新增商品 
       li='新打印机IP地址：' 
         form(action='/printers', method='post')
