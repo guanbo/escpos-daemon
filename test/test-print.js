@@ -18,7 +18,10 @@ describe('Print Order', function() {
   it('should be ok', function(done) {
     
     var data = {
+      store: "易淘菜-尚书巷店",
+      serialNumber: '#47',
       orderId: '100001024163170',
+      dealAt: "2016-03-25 16:31:23",
       items: [
         ["2000282587", "韭菜【菜】约240g/份", "$3.2", "1"],
         ["2001380715", "豆芽头【菜】 约480g/份", "$6.6", "1"]
